@@ -8,7 +8,7 @@ RUN yum install -y wget unzip tar git gcc m4 gcc-c++ make flex libtool-ltdl open
                    rpm-build libtool
 
 ENV PATH /usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/opt/open-rcm/bin
-ENV LD_LIBRARY_PATH /opt/open-rcm/lib64
+ENV LD_LIBRARY_PATH /opt/open-rcm/lib
 
 RUN wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz && \
     tar xf autoconf-2.69.tar.xz && cd autoconf-2.69 && \
@@ -43,5 +43,5 @@ RUN git clone https://github.com/open-mpi/orcm.git && \
 
 ADD orcm-site.xml /opt/open-rcm/etc/orcm-site.xml
 
-RUN echo "export LD_LIBRARY_PATH=/opt/open-rcm/lib64" >>/root/.bashrc
+RUN echo "export LD_LIBRARY_PATH=/opt/open-rcm/lib" >>/root/.bashrc
 RUN echo "export PATH=/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/opt/open-rcm/bin" >>/root/.bashrc
