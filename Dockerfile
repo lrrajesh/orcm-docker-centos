@@ -43,5 +43,5 @@ RUN git clone https://github.com/open-mpi/orcm.git && \
 
 ADD orcm-site.xml /opt/open-rcm/etc/orcm-site.xml
 
-RUN echo "export LD_LIBRARY_PATH=/opt/open-rcm/lib" >>/root/.bashrc
-RUN echo "export PATH=/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/opt/open-rcm/bin" >>/root/.bashrc
+RUN echo "export LD_LIBRARY_PATH=/opt/open-rcm/lib" >>/root/.profile
+RUN echo "export PATH=/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/opt/open-rcm/bin" >>/root/.profile
