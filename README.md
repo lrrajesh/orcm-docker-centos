@@ -1,11 +1,6 @@
 ## Docker context for Open RCM
 
-### Boot2Docker (docker for mac)
-* see mac instruction at [http://docs.docker.com/installation/mac/](http://docs.docker.com/installation/mac/)
-* only needed first time: `boot2docker init`
-* start boot2docker: `boot2docker start`
-* `export  DOCKER_HOST=tcp://192.168.59.103:2375` (IP could change, use `boot2docker ip` to get IP)
-
+for walkthrough see [https://github.com/benmcclelland/orcm-docker-ocli](https://github.com/benmcclelland/orcm-docker-ocli)
 ### Basic Idea
 `docker run -it benmcclelland/centos-orcm-git orcmd`
 
