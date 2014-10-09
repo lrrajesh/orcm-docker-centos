@@ -514,7 +514,7 @@
     <value>55805</value>
   </port>
   <mca-params>
-    <value>sensor_base_sample_rate=5,sensor_heartbeat_rate=10,sensor_base_log_samples=1,db_print_file=-,sensor=sigar</value>
+    <value>sensor_base_sample_rate=5,sensor_heartbeat_rate=10,sensor_base_log_samples=1,db_print_file=-,sensor=heartbeat,sigar</value>
   </mca-params>
 </orcm-daemons>
 
@@ -526,7 +526,7 @@
     <value>55805</value>
   </port>
   <mca-params>
-    <value>sensor_base_sample_rate=5,sensor_heartbeat_rate=10,sensor_base_log_samples=1,db_print_file=-,sensor=sigar</value>
+    <value>sensor_base_sample_rate=5,sensor_heartbeat_rate=10,sensor_base_log_samples=1,db_print_file=-,sensor=heartbeat,sigar</value>
   </mca-params>
 </orcm-aggregators>
 
